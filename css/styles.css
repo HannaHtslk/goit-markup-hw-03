@@ -208,3 +208,53 @@ color: var(--subheader-color);
 .contact_us {
     font-style: normal; 
 }
+
+h1, h2, h3, p {
+margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.page-header .container {
+    display: flex;
+    margin:0;
+    border-bottom: 1px solid #E7E9FC;
+        background: #fff;
+    
+}
+.logo {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 156px;
+    display: inline-flex;
+        height: 24px;
+        align-items: center;
+        flex-shrink: 0;
+}
+.menu {
+    margin-top: 24px;
+    margin-right: 332px;
+    margin-bottom: 24px;
+    margin-left: 76px;
+    display: inline-flex;
+        align-items: flex-start;
+        gap: 40px;
+}
+
+.contact-information {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+section {
+    height: 100vh;
+}
