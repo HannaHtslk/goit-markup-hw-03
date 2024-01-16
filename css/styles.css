@@ -233,7 +233,7 @@ section {
     }
    
   
-        header > div .container {
+    .page-header > .container {
             display: flex;
             width: 1158px;
             margin: 0 auto;
@@ -243,17 +243,7 @@ section {
             display: flex;
             align-items: center;
         }
-
-    .logo {
-        margin-top: 24px;
-        margin-bottom: 24px;
-        margin-left: 156px;
-        margin-right: 76px;
-        display: inline-flex;
-        height: 24px;
-        align-items: center;
-        flex-shrink: 0;
-    }
+        
 
     .menu {
         display: flex;
@@ -270,7 +260,7 @@ section {
 
 .contact-information {
         display: flex;
-
+        margin-top: 24px;
         gap: 40px;
     }
 
@@ -364,12 +354,12 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     text-align: center;
     margin-bottom: 72px;
 }
-.team-member .card-content {
-padding-top: 32px;
-padding-bottom: 32px;
-}
-.card-content .member-name {
+
+.member-name {
     margin-bottom: 8px;
+}
+.card-content  {
+padding: 32px 0;
 }
 
 .company-portfolio {
@@ -391,9 +381,7 @@ padding-bottom: 32px;
     align-items: center;
     flex-wrap: wrap;
     width: 1128px;
-        gap: 24px;
-        margin-right: 156px;
-        margin-left: 156px;
+        column-gap: 24px;
         row-gap: 48px;
 }
 
@@ -401,32 +389,25 @@ padding-bottom: 32px;
 margin-bottom: 72px;
 }
 
-.portfolio-item .card-content {
-padding-top: 32px;
-    padding-bottom: 32px;
-}
+
 
 .card-content  {
     padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-item {
     display: flex;
-        width: 360px;
-        height: 420px;
-        padding-bottom: 32px;
+        width: calc((100% - 48px) / 3);
         flex-direction: column;
         align-items: flex-start;
         flex-shrink: 0;
-        border: 1px solid  #E7E9FC;
             background:  #FFF;
 }
 
 
-.app-concept, .field-of-usage {
-    margin-right: 16px;
-    margin-left: 16px;
-}
+
 
 .website-footer {
     height: 312px;
