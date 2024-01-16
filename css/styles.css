@@ -227,25 +227,28 @@ section {
     width: 100%;
 }
 
-.container {
-    max-width: 1440px;
-        margin: 0;
-        padding: 0;
 
-}
-    
-.page-header .container {
-        display: flex;
+    .page-header {
         border-bottom: 1px solid #E7E9FC;
-        background: #fff;
-        
-
     }
+   
+  
+        header > div .container {
+            display: flex;
+            width: 1158px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .page-nav {
+            display: flex;
+            align-items: center;
+        }
 
     .logo {
         margin-top: 24px;
         margin-bottom: 24px;
         margin-left: 156px;
+        margin-right: 76px;
         display: inline-flex;
         height: 24px;
         align-items: center;
@@ -253,20 +256,21 @@ section {
     }
 
     .menu {
+        display: flex;
         margin-top: 24px;
         margin-right: 332px;
         margin-bottom: 24px;
         margin-left: 76px;
-        display: inline-flex;
-        align-items: flex-start;
+
         gap: 40px;
     }
+    .menu .menu-link {
+        padding: 24px 0;
+    }
 
-    .contact-information {
-        margin-top: 24px;
-        margin-bottom: 24px;
-        display: inline-flex;
-        align-items: flex-start;
+.contact-information {
+        display: flex;
+
         gap: 40px;
     }
 
@@ -276,7 +280,7 @@ section {
       height: 600px;
     align-items: center;
         justify-content: center;
-    
+    padding: 188px 0;
   }
   
 
@@ -284,28 +288,32 @@ section {
   .main-title {
     display: flex;
    text-align: center;
-   margin-top: 188px;
    margin-right: 472px;
    margin-bottom: 48px;
    margin-left: 472px;
+max-width: 496px;
    
   }
 
-  .main-page button {
-display: inline-flex;
-align-items: flex-start;
-    border-radius: 4px;
-    padding: 16px 32px;
-    margin-bottom: 188px;
-   
 
+  .modal-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
   }
   .main-page .container  {
             display: flex;
             flex-direction: column;
             align-items: center;
   }
-
+.visually-hidden {
+    position: absolute;
+}
+  .company-values {
+    padding: 120px 0;
+  }
 .company-values .container {
 display: flex;
 margin-top: 120px;
@@ -313,6 +321,9 @@ margin-right: 156px;
 margin-bottom: 120px;
 margin-left: 156px;
 
+}
+.company-value {
+    margin-bottom: 8px;
 }
 .container .values {
     display: flex;
@@ -328,6 +339,7 @@ margin-left: 156px;
     width: 1440px;
         height: 732px;
         flex-shrink: 0;
+        padding: 120px 0
         
  
 }
@@ -340,17 +352,17 @@ margin-left: 156px;
 .company-team .team {
     display: flex;
     gap: 24px;
-    margin-top: 72px;
     border-radius: 0px 0px 4px 4px;
 }
 .team-member {
     text-align: center;
-
+border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 .company-team .team-title {
     text-align: center;
-    margin-top: 120px;
+    margin-bottom: 72px;
 }
 .team-member .card-content {
 padding-top: 32px;
@@ -363,6 +375,8 @@ padding-bottom: 32px;
 .company-portfolio {
     background: #FFF;
     width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .company-portfolio .container {
@@ -372,20 +386,19 @@ padding-bottom: 32px;
         justify-content: center;
 }
 
-.company-portfolio .portfolio {
+ .portfolio {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     width: 1128px;
         gap: 24px;
-        margin-top: 72px;
         margin-right: 156px;
-        margin-bottom: 120px;
         margin-left: 156px;
+        row-gap: 48px;
 }
 
-.company-portfolio .portfolio-title {
-    margin-top: 120px;
+ .portfolio-title {
+margin-bottom: 72px;
 }
 
 .portfolio-item .card-content {
@@ -393,8 +406,8 @@ padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.card-content .app-concept {
-    margin-bottom: 8px;
+.card-content  {
+    padding: 32px 16px;
 }
 
 .portfolio-item {
@@ -417,18 +430,13 @@ padding-top: 32px;
 
 .website-footer {
     height: 312px;
+    padding: 100px 0;
 
 }
 
-.website-footer .footer-logo {
-    display: inline-flex;
-        height: 24px;
-        align-items: center;
-        flex-shrink: 0;
-        margin-top: 100px;
-        margin-right: 1169px;
-        margin-bottom: 16px;
-
+.website-footer a {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .website-footer .footer-text {
