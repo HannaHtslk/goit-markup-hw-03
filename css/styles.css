@@ -306,10 +306,134 @@ align-items: flex-start;
             align-items: center;
   }
 
+.company-values .container {
+display: flex;
+margin-top: 120px;
+margin-right: 156px;
+margin-bottom: 120px;
+margin-left: 156px;
 
-  
+}
+.container .values {
+    display: flex;
+    gap: 24px;
+
+}
+.list-item {
+    width: 264px;
+}
+
+.company-team {
+    background: #F4F4FD;
+    width: 1440px;
+        height: 732px;
+        flex-shrink: 0;
+        
+ 
+}
+.company-team .container {
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+.company-team .team {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+    border-radius: 0px 0px 4px 4px;
+}
+.team-member {
+    text-align: center;
+
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.company-team .team-title {
+    text-align: center;
+    margin-top: 120px;
+}
+.team-member .card-content {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+.card-content .member-name {
+    margin-bottom: 8px;
+}
+
+.company-portfolio {
+    background: #FFF;
+    width: 1440px;
+}
+
+.company-portfolio .container {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.company-portfolio .portfolio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1128px;
+        gap: 24px;
+        margin-top: 72px;
+        margin-right: 156px;
+        margin-bottom: 120px;
+        margin-left: 156px;
+}
+
+.company-portfolio .portfolio-title {
+    margin-top: 120px;
+}
+
+.portfolio-item .card-content {
+padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.card-content .app-concept {
+    margin-bottom: 8px;
+}
+
+.portfolio-item {
+    display: flex;
+        width: 360px;
+        height: 420px;
+        padding-bottom: 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        border: 1px solid  #E7E9FC;
+            background:  #FFF;
+}
 
 
+.app-concept, .field-of-usage {
+    margin-right: 16px;
+    margin-left: 16px;
+}
 
+.website-footer {
+    height: 312px;
 
+}
 
+.website-footer .footer-logo {
+    display: inline-flex;
+        height: 24px;
+        align-items: center;
+        flex-shrink: 0;
+        margin-top: 100px;
+        margin-right: 1169px;
+        margin-bottom: 16px;
+
+}
+
+.website-footer .footer-text {
+
+padding-right: 1020px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+}
