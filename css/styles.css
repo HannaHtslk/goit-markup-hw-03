@@ -67,6 +67,7 @@ color: #F4F4FD;
 
 .footer-text {
     color: var(--footer-text-color);
+    width: 264px;
     font-family: var(--main-text-font);
     font-size: 16px;
         font-weight: 400;
@@ -223,9 +224,7 @@ ul {
 img {
     display: block;
 }
-section {
-    width: 100%;
-}
+
 
 
     .page-header {
@@ -234,7 +233,8 @@ section {
    
   
     .page-header > .container {
-            display: flex;
+display: flex;
+align-items: center;
             width: 1158px;
             margin: 0 auto;
             padding: 0 15px;
@@ -242,31 +242,31 @@ section {
         .page-nav {
             display: flex;
             align-items: center;
+            margin-right: auto;
         }
         
 
     .menu {
         display: flex;
-        margin-top: 24px;
-        margin-right: 332px;
-        margin-bottom: 24px;
+
 
         gap: 40px;
     }
     .menu .menu-link {
         padding: 24px 0;
+        display:block;
     }
 
 .contact-information {
         display: flex;
-        margin-top: 24px;
+    
         gap: 40px;
     }
 
   .main-page {
       display: flex;
       background: #2E2F42;
-      height: 600px;
+
     align-items: center;
         justify-content: center;
     padding: 188px 0;
@@ -275,27 +275,26 @@ section {
 
 
   .main-title {
-    display: flex;
-   text-align: center;
-   margin-right: 472px;
+   margin-right: auto;
    margin-bottom: 48px;
-   margin-left: 472px;
+   margin-left: auto;
 max-width: 496px;
    
   }
 
 
   .modal-btn {
+    margin: 0 auto;
     display: block;
     min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
   }
-  .main-page .container  {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+.container  {
+           width: 1158px;
+            margin: 0 auto;
+            padding: 0 15px;
   }
     .visually-hidden {
         position: absolute;
@@ -313,14 +312,8 @@ max-width: 496px;
   .company-values {
     padding: 120px 0;
   }
-.company-values .container {
-display: flex;
-margin-top: 120px;
-margin-right: 156px;
-margin-bottom: 120px;
-margin-left: 156px;
 
-}
+
 .company-value {
     margin-bottom: 8px;
 }
@@ -335,19 +328,12 @@ margin-left: 156px;
 
 .company-team {
     background: #F4F4FD;
-    width: 1440px;
-        height: 732px;
-        flex-shrink: 0;
+
         padding: 120px 0
         
  
 }
-.company-team .container {
-    display: flex;
-    flex-direction: column;
-        align-items: center;
-        justify-content: center;
-}
+
 .company-team .team {
     display: flex;
     gap: 24px;
@@ -377,23 +363,15 @@ padding: 32px 0;
 
 .company-portfolio {
     background: #FFF;
-    width: 1440px;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.company-portfolio .container {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-}
 
  .portfolio {
     display: flex;
-    align-items: center;
+
     flex-wrap: wrap;
-    width: 1128px;
         column-gap: 24px;
         row-gap: 48px;
 }
@@ -412,11 +390,9 @@ align-self: stretch;
 }
 
 .portfolio-item {
-    display: flex;
+
         width: calc((100% - 48px) / 3);
-        flex-direction: column;
-        align-items: flex-start;
-        flex-shrink: 0;
+         
             background:  #FFF;
 }
 
@@ -428,7 +404,7 @@ align-self: stretch;
 
 
 .website-footer {
-    height: 312px;
+
     padding: 100px 0;
 
 }
@@ -436,15 +412,10 @@ align-self: stretch;
 .website-footer a {
     display: inline-block;
     margin-bottom: 16px;
-    margin-left: 156px;
+
 }
 
-.website-footer .footer-text {
 
-padding-right: 1020px;
-    padding-bottom: 100px;
-    padding-left: 156px;
-}
 
 .logo {
     margin-right: 76px;
