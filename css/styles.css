@@ -1,3 +1,4 @@
+/* #region Common Styles */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -34,6 +35,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -44,7 +47,10 @@ a {
     margin: 0 auto;
     padding: 0 15px;
 }
-/* HEADER */
+/* #endregion Common Styles */
+
+
+/* #region HEADER */
 .page-header {
     border-bottom: 1px solid #E7E9FC;
 }
@@ -52,9 +58,7 @@ a {
 .page-header>.container {
     display: flex;
     align-items: center;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+
 }
 
 .page-nav {
@@ -150,14 +154,11 @@ a {
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
+/* #endregion HEADER */
 
-/* END HEADER */
 
-/* Welcome Page */
+/* #region Main Page */
 .main-page {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 188px 0;
     background-color: var(--main-page-background);
   }
@@ -197,10 +198,10 @@ a {
 .modal-btn:focus {
     background-color: #404BBF;
 }
+/* #endregion Main Page */
 
-/* End Welcome Page */
 
-/* Values Page */
+/* #region Values Page */
 
  .company-values {
      padding: 120px 0;
@@ -244,9 +245,10 @@ a {
      letter-spacing: 0.32px;
  }
 
-/* End Values Page */
+ /* #endregion Values Page */
 
-/* Team Page */
+
+/* #region Team Page */
 .company-team {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -270,6 +272,7 @@ a {
     background-color: #FFFFFF;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 24px * 3) / 4);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .card-content {
@@ -293,9 +296,10 @@ a {
     letter-spacing: 0.32px;
     text-align: center;
 }
-/* End Team Page */
+/* #endregion Team Page */
 
-/* Portfolio Page */
+
+/* #region Portfolio Page */
 
 .company-portfolio {
     background: #FFF;
@@ -344,10 +348,10 @@ a {
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
+/* #endregion Portfolio Page */
 
-/* End Portfolio Page */
 
-/* footer */
+/* #region footer */
 .website-footer {
     background-color: var(--footer-background);
     padding: 100px 0;
@@ -375,6 +379,5 @@ a {
         line-height: 1.5;
         letter-spacing: 0.32px;
 }
+/* #endregion footer */
 
-
-/* End footer */
